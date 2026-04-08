@@ -8,66 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@300;400;700&display=swap');
-        
-        body { 
-            font-family: 'Inter', sans-serif; 
-            background-color: #050505;
-            color: #ffffff;
-        }
-
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #ffffff; margin: 0; }
         .brand-font { font-family: 'Cinzel', serif; }
-
-        /* Tamanho das imagens controlado para elegância */
-        .product-image-container {
-            position: relative;
-            overflow: hidden;
-            aspect-ratio: 3/4;
-            max-height: 320px; 
-            background: #111;
-        }
-
-        .product-card {
-            background: #0f0f0f;
-            border: 1px solid #1a1a1a;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        .product-card:hover {
-            border-color: #d4af37;
-            transform: translateY(-8px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-
+        .product-image-container { position: relative; overflow: hidden; aspect-ratio: 3/4; max-height: 320px; background: #111; }
+        .product-card { background: #0f0f0f; border: 1px solid #1a1a1a; transition: all 0.4s ease; border-radius: 4px; }
+        .product-card:hover { border-color: #d4af37; transform: translateY(-8px); box-shadow: 0 10px 30px rgba(0,0,0,0.6); }
         .gold-text { color: #d4af37; }
-        
-        .btn-whatsapp {
-            background: transparent;
-            border: 1px solid #d4af37;
-            color: #d4af37;
-            transition: 0.3s;
-            font-size: 0.7rem;
-            letter-spacing: 0.15em;
-            font-weight: 700;
-        }
-
-        .btn-whatsapp:hover {
-            background: #d4af37;
-            color: #000;
-        }
-
-        header {
-            background: linear-gradient(to bottom, #000 0%, #050505 100%);
-        }
-
-        /* Efeito de revelação suave */
-        .reveal {
-            animation: fadeIn 1.2s ease-out;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+        .btn-whatsapp { background: transparent; border: 1px solid #d4af37; color: #d4af37; transition: 0.3s; font-size: 0.7rem; letter-spacing: 0.15em; font-weight: 700; text-transform: uppercase; }
+        .btn-whatsapp:hover { background: #d4af37; color: #000; }
     </style>
 </head>
 <body>
@@ -75,90 +23,88 @@
     <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-sm border-b border-white/5 py-4 px-6">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <span class="brand-font text-lg gold-text tracking-widest">CF FOR MEN</span>
-            <a href="https://wa.me/5538998091257" target="_blank" class="gold-text hover:scale-110 transition">
+            <a href="https://wa.me/5538998091257?text=Olá! Gostaria de conhecer a coleção." target="_blank" class="gold-text">
                 <i class="fab fa-whatsapp text-2xl"></i>
             </a>
         </div>
     </nav>
 
     <header class="pt-32 pb-16 text-center px-6">
-        <div class="reveal">
-            <h1 class="brand-font text-4xl md:text-6xl mb-2 tracking-tight">CF FOR MEN</h1>
-            <p class="text-zinc-500 uppercase tracking-[0.4em] text-[10px]">Moda Masculina • Coleção Exclusiva</p>
-            <div class="mt-6 h-[1px] w-12 bg-amber-700 mx-auto"></div>
-        </div>
+        <h1 class="brand-font text-4xl md:text-6xl mb-2 tracking-tight">CF FOR MEN</h1>
+        <p class="text-zinc-500 uppercase tracking-[0.4em] text-[10px]">Moda Masculina • Coleção Exclusiva</p>
+        <div class="mt-6 h-[1px] w-12 bg-amber-700 mx-auto"></div>
     </header>
 
     <main class="max-w-7xl mx-auto px-6 pb-24">
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
             
-            <div class="product-card rounded-sm overflow-hidden group">
+            <div class="product-card overflow-hidden">
                 <div class="product-image-container">
-                    <img src="WhatsApp Image 2026-04-08 at 10.15.36 AM.jpeg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <img src="peca1.jpg.jpeg" alt="Bermuda Alfaiataria" class="w-full h-full object-cover">
                 </div>
                 <div class="p-4 text-center">
-                    <h3 class="text-xs font-bold mb-3 uppercase tracking-wider">Short Alfaiataria Sand</h3>
-                    <a href="https://wa.me/5538998091257?text=Olá! Tenho interesse no Short Alfaiataria Sand." class="btn-whatsapp block py-3 rounded-sm">TENHO INTERESSE</a>
+                    <h3 class="text-xs font-bold mb-3 uppercase tracking-wider">Bermuda Alfaiataria</h3>
+                    <a href="https://wa.me/5538998091257?text=Olá! Tenho interesse na Bermuda Alfaiataria (Peça 1)." class="btn-whatsapp block py-3">TENHO INTERESSE</a>
                 </div>
             </div>
 
-            <div class="product-card rounded-sm overflow-hidden group">
+            <div class="product-card overflow-hidden">
                 <div class="product-image-container">
-                    <img src="WhatsApp Image 2026-04-08 at 10.15.47 AM.jpeg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <img src="peca2.jpg.jpeg" alt="Camiseta Premium" class="w-full h-full object-cover">
                 </div>
                 <div class="p-4 text-center">
-                    <h3 class="text-xs font-bold mb-3 uppercase tracking-wider">T-Shirt Premium Black</h3>
-                    <a href="https://wa.me/5538998091257?text=Olá! Tenho interesse na T-Shirt Premium Black." class="btn-whatsapp block py-3 rounded-sm">TENHO INTERESSE</a>
+                    <h3 class="text-xs font-bold mb-3 uppercase tracking-wider">Camiseta Premium</h3>
+                    <a href="https://wa.me/5538998091257?text=Olá! Tenho interesse na Camiseta Preta (Peça 2)." class="btn-whatsapp block py-3">TENHO INTERESSE</a>
                 </div>
             </div>
 
-            <div class="product-card rounded-sm overflow-hidden group">
+            <div class="product-card overflow-hidden">
                 <div class="product-image-container">
-                    <img src="WhatsApp Image 2026-04-08 at 10.15.58 AM.jpeg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <img src="peca3.jpg.jpeg" alt="Jeans Slim" class="w-full h-full object-cover">
                 </div>
                 <div class="p-4 text-center">
                     <h3 class="text-xs font-bold mb-3 uppercase tracking-wider">Jeans Slim Heritage</h3>
-                    <a href="https://wa.me/5538998091257?text=Olá! Tenho interesse no Jeans Slim Heritage." class="btn-whatsapp block py-3 rounded-sm">TENHO INTERESSE</a>
+                    <a href="https://wa.me/5538998091257?text=Olá! Tenho interesse no Jeans Slim (Peça 3)." class="btn-whatsapp block py-3">TENHO INTERESSE</a>
                 </div>
             </div>
 
-            <div class="product-card rounded-sm overflow-hidden group">
+            <div class="product-card overflow-hidden">
                 <div class="product-image-container">
-                    <img src="WhatsApp Image 2026-04-08 at 10.16.09 AM.jpeg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <img src="peca4.jpg.jpeg" alt="Conjunto Linho" class="w-full h-full object-cover">
                 </div>
                 <div class="p-4 text-center">
-                    <h3 class="text-xs font-bold mb-3 uppercase tracking-wider">Conjunto Linho Off-White</h3>
-                    <a href="https://wa.me/5538998091257?text=Olá! Tenho interesse no Conjunto Linho Off-White." class="btn-whatsapp block py-3 rounded-sm">TENHO INTERESSE</a>
+                    <h3 class="text-xs font-bold mb-3 uppercase tracking-wider">Conjunto Linho</h3>
+                    <a href="https://wa.me/5538998091257?text=Olá! Tenho interesse no Conjunto Linho (Peça 4)." class="btn-whatsapp block py-3">TENHO INTERESSE</a>
                 </div>
             </div>
 
-            <div class="product-card rounded-sm overflow-hidden group">
+            <div class="product-card overflow-hidden">
                 <div class="product-image-container">
-                    <img src="WhatsApp Image 2026-04-08 at 10.16.23 AM.jpeg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <img src="peca5.jpg.jpeg" alt="Polo Knit" class="w-full h-full object-cover">
                 </div>
                 <div class="p-4 text-center">
                     <h3 class="text-xs font-bold mb-3 uppercase tracking-wider">Polo Knit Texture</h3>
-                    <a href="https://wa.me/5538998091257?text=Olá! Tenho interesse na Polo Knit Texture." class="btn-whatsapp block py-3 rounded-sm">TENHO INTERESSE</a>
+                    <a href="https://wa.me/5538998091257?text=Olá! Tenho interesse na Polo Knit (Peça 5)." class="btn-whatsapp block py-3">TENHO INTERESSE</a>
                 </div>
             </div>
 
-            <div class="product-card rounded-sm overflow-hidden group">
+            <div class="product-card overflow-hidden">
                 <div class="product-image-container">
-                    <img src="WhatsApp Image 2026-04-08 at 10.16.36 AM.jpeg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <img src="peca6.jpg.jpeg" alt="Calça Cargo" class="w-full h-full object-cover">
                 </div>
                 <div class="p-4 text-center">
-                    <h3 class="text-xs font-bold mb-3 uppercase tracking-wider">Urban Cargo Elite</h3>
-                    <a href="https://wa.me/5538998091257?text=Olá! Tenho interesse na Calça Urban Cargo Elite." class="btn-whatsapp block py-3 rounded-sm">TENHO INTERESSE</a>
+                    <h3 class="text-xs font-bold mb-3 uppercase tracking-wider">Calça Cargo Elite</h3>
+                    <a href="https://wa.me/5538998091257?text=Olá! Tenho interesse na Calça Cargo (Peça 6)." class="btn-whatsapp block py-3">TENHO INTERESSE</a>
                 </div>
             </div>
 
-            <div class="product-card rounded-sm overflow-hidden group">
+            <div class="product-card overflow-hidden">
                 <div class="product-image-container">
-                    <img src="WhatsApp Image 2026-04-08 at 10.16.48 AM.jpeg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <img src="peca7.jpg.jpeg" alt="Sneaker Branco" class="w-full h-full object-cover">
                 </div>
                 <div class="p-4 text-center">
                     <h3 class="text-xs font-bold mb-3 uppercase tracking-wider">Sneaker Classic White</h3>
-                    <a href="https://wa.me/5538998091257?text=Olá! Tenho interesse no Sneaker Classic White." class="btn-whatsapp block py-3 rounded-sm">TENHO INTERESSE</a>
+                    <a href="https://wa.me/5538998091257?text=Olá! Tenho interesse no Sneaker Branco (Peça 7)." class="btn-whatsapp block py-3">TENHO INTERESSE</a>
                 </div>
             </div>
 
@@ -166,12 +112,8 @@
     </main>
 
     <footer class="py-16 bg-black border-t border-white/5 text-center">
-        <p class="brand-font gold-text text-xl mb-4 tracking-widest">CF FOR MEN</p>
+        <p class="brand-font gold-text text-xl mb-2">CF FOR MEN</p>
         <p class="text-zinc-600 text-[10px] uppercase tracking-[0.3em]">Qualidade Premium • Estilo Atemporal</p>
-        <div class="mt-8 flex justify-center gap-6 text-zinc-500">
-            <a href="#" class="hover:text-amber-500"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="hover:text-amber-500"><i class="fab fa-facebook"></i></a>
-        </div>
     </footer>
 
 </body>
